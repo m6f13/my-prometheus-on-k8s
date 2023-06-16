@@ -19,4 +19,9 @@ kubectl create ns monitoring
 helm upgrade --install prom01 ./charts/kube-prometheus-stack -f ./charts/kube-prometheus-stack/values.yaml -n monitoring
 ```
 
+## access Grafana
+```shell
+kubectl -n monitoring port-forward service/prom01-grafana 3000
+```
+
 ## Grafana user: admin / default password: prom-operator
