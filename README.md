@@ -9,7 +9,7 @@ helm repo update
 
 ## pull chart from repo and untar chart locally
 ```shell
-cd charts
+cd repo/helm
 helm pull prometheus-community/kube-prometheus-stack --untar
 ```
 
